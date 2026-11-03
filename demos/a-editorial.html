@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAX AVE · Motorcycle Engine Oil</title>
+<meta name="description" content="MAX AVE motorcycle engine oils. Maximum average, maximum protection. Order with Cash on Delivery or JazzCash.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/shop.css">
+<style>
+:root {
+  --paper: #f4f1ec;
+  --paper-2: #ebe6de;
+  --ink: #16171a;
+  --graphite: #4b4f56;
+  --mute: #7b7d82;
+  --rule: #d9d3c9;
+  --red: #b3121c;
+  --gold: #a8843f;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Manrope", system-ui, sans-serif;
+
+  --ck-bg: #fbfaf7; --ck-surface: var(--paper); --ck-fg: var(--ink); --ck-muted: var(--mute);
+  --ck-line: var(--rule); --ck-accent: var(--ink); --ck-accent-fg: #fff; --ck-radius: 2px;
+  --ck-font: var(--sans); --ck-display: var(--serif);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+.wrap { width: min(1240px, 100% - 32px); margin-inline: auto; }
+.eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--mute); }
+.serif { font-family: var(--serif); font-weight: 500; letter-spacing: -.01em; }
+.btn { display: inline-flex; align-items: center; gap: 12px; padding: 16px 28px; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; border: 1px solid var(--ink); transition: background .25s, color .25s; cursor: pointer; background: none; font-family: inherit; color: var(--ink); }
+.btn.solid { background: var(--ink); color: var(--paper); }
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn.solid:hover { background: var(--red); border-color: var(--red); }
+.arrow { width: 18px; height: 1px; background: currentColor; position: relative; }
+.arrow::after { content: ""; position: absolute; right: 0; top: -3px; width: 7px; height: 7px; border-top: 1px solid currentColor; border-right: 1px solid currentColor; transform: rotate(45deg); }
+
+/* utility + nav */
+.util { background: var(--ink); color: #cfcac2; font-size: 12px; letter-spacing: .04em; }
+.util .wrap { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; }
+.util a { color: #fff; }
+header.nav { position: sticky; top: 0; z-index: 50; background: rgba(244,241,236,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.logo { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .28em; font-size: 15px; }
+.logo svg { width: 34px; height: 34px; }
+.logo small { display: block; font-size: 9px; letter-spacing: .3em; color: var(--mute); font-weight: 600; margin-top: 2px; }
+.nav ul { display: flex; gap: 36px; list-style: none; margin: 0; padding: 0; font-size: 13px; font-weight: 500; letter-spacing: .04em; }
+.nav ul a { position: relative; padding: 4px 0; }
+.nav ul a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 0; height: 1px; background: var(--ink); transition: right .3s; }
+.nav ul a:hover::after { right: 0; }
+.nav-r { display: flex; align-items: center; gap: 22px; font-size: 13px; }
+.cart-btn { display: inline-flex; align-items: center; gap: 8px; background: none; border: 0; font: inherit; cursor: pointer; color: var(--ink); }
+.cart-btn i { font-style: normal; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 11px; background: var(--ink); color: var(--paper); font-size: 11px; display: grid; place-items: center; font-weight: 700; }
+.cart-btn i[data-empty] { background: var(--rule); color: var(--graphite); }
+
+/* hero */
+.hero { padding: 64px 0 0; }
+.hero .wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: 0; border-bottom: 1px solid var(--rule); }
+.hero-copy { padding: 40px 56px 64px 0; display: flex; flex-direction: column; justify-content: center; }
+.hero h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(48px, 6.4vw, 96px); line-height: .98; margin: 22px 0 28px; letter-spacing: -.02em; }
+.hero h1 em { font-style: italic; color: var(--red); }
+.hero p.lead { font-size: 18px; color: var(--graphite); max-width: 470px; margin: 0 0 36px; }
+.hero .ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-specs { display: grid; grid-template-columns: repeat(3, auto); gap: 32px; margin-top: 56px; padding-top: 26px; border-top: 1px solid var(--rule); justify-content: start; }
+.hero-specs b { display: block; font-family: var(--serif); font-size: 34px; font-weight: 500; line-height: 1; }
+.hero-specs span { font-size: 12px; color: var(--mute); letter-spacing: .06em; }
+.hero-stage { position: relative; background: radial-gradient(120% 80% at 50% 30%, #fdfcf9 0%, var(--paper-2) 70%); border-left: 1px solid var(--rule); min-height: 620px; display: grid; place-items: center; overflow: hidden; }
+.hero-stage::before { content: "20W·50"; position: absolute; bottom: -24px; left: 50%; transform: translateX(-50%); font-family: var(--serif); font-size: 190px; color: rgba(22,23,26,.045); white-space: nowrap; letter-spacing: -.02em; }
+.hero-stage img { height: 430px; width: auto; filter: drop-shadow(0 40px 40px rgba(30,25,20,.22)); position: relative; transition: opacity .4s, transform .6s cubic-bezier(.2,.7,.2,1); }
+.hero-stage img.swap { opacity: 0; transform: rotateY(70deg); }
+.anno { position: absolute; font-size: 12px; color: var(--graphite); display: flex; align-items: center; gap: 10px; }
+.anno::before { content: ""; width: 28px; height: 1px; background: var(--ink); opacity: .35; }
+.anno b { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--ink); }
+.anno { z-index: 2; line-height: 1.35; }
+.anno.a1 { top: 16%; right: 4%; flex-direction: row-reverse; text-align: right; }
+.anno.a2 { top: 46%; left: 4%; }
+.anno.a3 { top: 66%; right: 4%; flex-direction: row-reverse; text-align: right; }
+@media (max-width: 1280px) { .anno span { font-size: 11px; } .anno b { font-size: 16px; } .hero-stage img { height: 400px; } }
+.flip { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); display: flex; border: 1px solid var(--rule); background: #fbfaf7; }
+.flip button { background: none; border: 0; padding: 9px 18px; font: 600 11px var(--sans); letter-spacing: .16em; cursor: pointer; color: var(--mute); }
+.flip button.on { background: var(--ink); color: #fff; }
+
+/* pillars */
+.pillars { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--rule); }
+.pillar { padding: 44px 32px 48px 0; border-right: 1px solid var(--rule); }
+.pillar + .pillar { padding-left: 32px; }
+.pillar:last-child { border-right: 0; }
+.pillar .n { font-family: var(--serif); font-size: 15px; color: var(--red); font-style: italic; }
+.pillar h3 { font-family: var(--serif); font-size: 26px; font-weight: 600; margin: 10px 0 10px; line-height: 1.1; }
+.pillar p { margin: 0; font-size: 14px; color: var(--graphite); }
+
+/* section heads */
+section.block { padding: 110px 0; }
+.shead { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 56px; }
+.shead h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(40px, 4.6vw, 64px); line-height: 1; margin: 14px 0 0; letter-spacing: -.015em; }
+.shead p { color: var(--graphite); margin: 0; max-width: 460px; justify-self: end; }
+
+/* range */
+.range { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.card { background: var(--paper); display: flex; flex-direction: column; position: relative; transition: background .3s; }
+.card:hover { background: #f8f6f2; }
+.card-img { height: 360px; display: grid; place-items: center; position: relative; cursor: pointer; overflow: hidden; }
+.card-img::after { content: ""; position: absolute; width: 230px; height: 230px; border-radius: 50%; background: var(--sw); opacity: .09; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.card:hover .card-img::after { transform: scale(1.25); }
+.card-img img { height: 290px; width: auto; position: relative; z-index: 1; filter: drop-shadow(0 22px 22px rgba(30,25,20,.2)); transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.card:hover .card-img img { transform: translateY(-8px) rotate(-2deg); }
+.card .tag { position: absolute; top: 20px; left: 22px; z-index: 2; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; color: var(--graphite); }
+.card .grade { position: absolute; top: 16px; right: 22px; z-index: 2; font-family: var(--serif); font-size: 22px; font-weight: 600; }
+.card-body { padding: 0 28px 28px; display: flex; flex-direction: column; flex: 1; }
+.card h3 { font-family: var(--serif); font-size: 30px; font-weight: 600; margin: 0; line-height: 1.1; }
+.card .meta { font-size: 13px; color: var(--mute); margin: 4px 0 12px; }
+.card p { font-size: 14px; color: var(--graphite); margin: 0 0 22px; }
+.card-foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; padding-top: 18px; border-top: 1px solid var(--rule); }
+.card-foot .price { font-weight: 700; font-size: 15px; }
+.card-foot .price small { font-weight: 500; color: var(--mute); font-size: 12px; }
+.card-foot .acts { display: flex; gap: 8px; }
+.icon-btn { height: 40px; padding: 0 16px; border: 1px solid var(--ink); background: none; font: 600 11px var(--sans); letter-spacing: .14em; text-transform: uppercase; cursor: pointer; color: var(--ink); }
+.icon-btn.solid { background: var(--ink); color: #fff; }
+.icon-btn:hover { background: var(--red); border-color: var(--red); color: #fff; }
+
+/* finder */
+.finder { background: var(--ink); color: #e9e5de; }
+.finder .shead h2 { color: #fff; }
+.finder .shead p { color: #a9a49b; }
+.finder .eyebrow { color: #a9a49b; }
+.f-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
+.f-opts { display: grid; gap: 1px; background: #2c2d31; border: 1px solid #2c2d31; }
+.f-opt { background: var(--ink); color: #e9e5de; border: 0; text-align: left; padding: 22px 26px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font: 500 16px var(--sans); transition: background .25s; }
+.f-opt small { color: #8c877f; display: block; font-size: 12px; margin-top: 2px; }
+.f-opt:hover { background: #1f2024; }
+.f-opt.on { background: #24252a; box-shadow: inset 3px 0 0 var(--red); }
+.f-res { display: grid; grid-template-columns: 220px 1fr; gap: 36px; align-items: center; }
+.f-res img { height: 320px; width: auto; justify-self: center; filter: drop-shadow(0 30px 30px rgba(0,0,0,.5)); }
+.f-res h3 { font-family: var(--serif); font-size: 42px; font-weight: 500; color: #fff; margin: 10px 0 6px; line-height: 1; }
+.f-res .g { color: var(--gold); font-weight: 600; letter-spacing: .08em; font-size: 14px; }
+.f-res p { color: #a9a49b; font-size: 15px; }
+.f-res .btn { color: #fff; border-color: #fff; margin-top: 10px; }
+.f-res .btn:hover { background: #fff; color: var(--ink); }
+
+/* label guide */
+.guide { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.guide-img { background: var(--paper-2); display: grid; place-items: center; padding: 50px; position: relative; }
+.guide-img img { height: 460px; width: auto; filter: drop-shadow(0 30px 30px rgba(30,25,20,.2)); }
+.dl { display: grid; gap: 0; }
+.dl div { display: grid; grid-template-columns: 120px 1fr; gap: 24px; padding: 24px 0; border-top: 1px solid var(--rule); }
+.dl div:last-child { border-bottom: 1px solid var(--rule); }
+.dl dt { font-family: var(--serif); font-size: 28px; font-weight: 600; line-height: 1; }
+.dl dd { margin: 0; color: var(--graphite); font-size: 15px; }
+.dl dd b { color: var(--ink); }
+
+/* change steps */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; counter-reset: s; border-top: 1px solid var(--ink); }
+.step { padding: 28px 28px 0 0; }
+.step::before { counter-increment: s; content: "0" counter(s); font-family: var(--serif); font-size: 54px; line-height: 1; color: var(--rule); display: block; margin-bottom: 18px; }
+.step h4 { margin: 0 0 8px; font-size: 16px; font-weight: 700; }
+.step p { margin: 0; font-size: 14px; color: var(--graphite); }
+
+/* contact band */
+.contact { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.contact .wrap { display: grid; grid-template-columns: 1.2fr 1fr; }
+.contact .l { padding: 90px 60px 90px 0; border-right: 1px solid var(--rule); }
+.contact .l h2 { font-family: var(--serif); font-size: clamp(40px, 4.6vw, 64px); font-weight: 500; line-height: 1; margin: 14px 0 22px; }
+.contact .l p { color: var(--graphite); max-width: 460px; }
+.contact .r { padding: 90px 0 90px 60px; display: grid; gap: 28px; align-content: center; }
+.contact .big { font-family: var(--serif); font-size: clamp(32px, 3.4vw, 46px); font-weight: 600; line-height: 1; display: block; margin-top: 8px; }
+.contact .big:hover { color: var(--red); }
+
+/* faq */
+.faq { max-width: 860px; }
+details { border-bottom: 1px solid var(--rule); }
+summary { list-style: none; cursor: pointer; padding: 26px 0; display: flex; justify-content: space-between; gap: 20px; font-family: var(--serif); font-size: 24px; font-weight: 600; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font-family: var(--sans); font-weight: 300; font-size: 26px; transition: transform .3s; }
+details[open] summary::after { transform: rotate(45deg); }
+details p { margin: -8px 0 26px; color: var(--graphite); max-width: 720px; }
+
+footer { background: var(--ink); color: #a9a49b; padding: 70px 0 30px; font-size: 14px; }
+.foot { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; }
+footer h5 { color: #fff; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; margin: 0 0 18px; }
+footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+footer a:hover { color: #fff; }
+footer .logo { color: #fff; }
+.legal { margin-top: 60px; padding-top: 24px; border-top: 1px solid #2c2d31; display: flex; justify-content: space-between; font-size: 12px; gap: 20px; flex-wrap: wrap; }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s, transform .9s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+
+@media (max-width: 1000px) {
+  .nav ul { display: none; }
+  .hero .wrap, .f-grid, .guide, .contact .wrap, .shead { grid-template-columns: 1fr; }
+  .shead p { justify-self: start; }
+  .hero-copy { padding: 20px 0 48px; }
+  .hero-stage { border-left: 0; min-height: 480px; }
+  .hero-stage img { height: 360px; }
+  .pillars { grid-template-columns: 1fr 1fr; }
+  .pillar:nth-child(2) { border-right: 0; }
+  .pillar:nth-child(3) { padding-left: 0; }
+  .pillar:nth-child(-n+2) { border-bottom: 1px solid var(--rule); }
+  .range { grid-template-columns: 1fr 1fr; }
+  .steps { grid-template-columns: 1fr 1fr; row-gap: 30px; }
+  .contact .l { padding: 70px 0 40px; border-right: 0; }
+  .contact .r { padding: 0 0 70px; }
+  .foot { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .util .wrap span:last-child { display: none; }
+  .nav-r .tel { display: none; }
+  section.block { padding: 72px 0; }
+  .hero { padding-top: 24px; }
+  .hero-specs { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .hero-specs b { font-size: 26px; }
+  .anno { display: none; }
+  .pillars, .range { grid-template-columns: 1fr; }
+  .pillar, .pillar + .pillar { padding: 32px 0; border-right: 0; border-bottom: 1px solid var(--rule); }
+  .f-res { grid-template-columns: 1fr; text-align: center; }
+  .f-res img { height: 240px; }
+  .guide-img img { height: 340px; }
+  .dl div { grid-template-columns: 1fr; gap: 6px; }
+  .steps { grid-template-columns: 1fr; }
+  .foot { grid-template-columns: 1fr; }
+  .card-foot { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="util"><div class="wrap">
+  <span>Sales &amp; enquiries <a href="tel:+923041343605">+92 304 1343605</a></span>
+  <span>Cash on Delivery nationwide · JazzCash accepted · Free delivery over Rs 2,000</span>
+</div></div>
+
+<header class="nav"><div class="wrap">
+  <a href="#" class="logo" aria-label="MAX AVE home">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18.5" fill="none" stroke="#a8843f" stroke-width="1.5"/><path d="M10 27 L16 13 L20 21 L24 13 L30 27" fill="none" stroke="#b3121c" stroke-width="3" stroke-linejoin="round"/></svg>
+    <span>MAX AVE<small>LUBRICANTS</small></span>
+  </a>
+  <ul>
+    <li><a href="#range">The Range</a></li>
+    <li><a href="#finder">Oil Finder</a></li>
+    <li><a href="#guide">Technology</a></li>
+    <li><a href="#contact">Dealers</a></li>
+  </ul>
+  <div class="nav-r">
+    <a class="tel" href="tel:+923041343605">+92 304 1343605</a>
+    <button class="cart-btn" data-cart>Cart <i data-cart-count>0</i></button>
+  </div>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="hero-copy">
+    <span class="eyebrow">4-Stroke Motorcycle Engine Oil</span>
+    <h1>More kilometres.<br><em>Less</em> wear.</h1>
+    <p class="lead">MAX AVE oils are blended for the way Pakistan rides: hot summers, dusty roads and stop-start traffic. They protect your engine and help keep its fuel average where it should be.</p>
+    <div class="ctas">
+      <a href="#range" class="btn solid">Shop the range <span class="arrow"></span></a>
+      <a href="#finder" class="btn">Find my oil</a>
+    </div>
+    <div class="hero-specs">
+      <div><b>20W-50</b><span>Multigrade</span></div>
+      <div><b>4T</b><span>Wet-clutch safe</span></div>
+      <div><b>COD</b><span>Pay on delivery</span></div>
+    </div>
+  </div>
+  <div class="hero-stage">
+    <span class="anno a1"><span><b>Anti-wear</b><br>additive film</span></span>
+    <span class="anno a2"><span><b>Thermal</b><br>stability to 120°C+</span></span>
+    <span class="anno a3"><span><b>Detergents</b><br>keep sludge away</span></span>
+    <img id="heroBottle" src="../assets/bottles/front-red.png" alt="MAX AVE Classic 4T 20W-50 bottle">
+    <div class="flip"><button class="on" data-hs="front">Front</button><button data-hs="back">Back</button></div>
+  </div>
+</div></section>
+
+<div class="wrap pillars">
+  <div class="pillar reveal"><span class="n">i.</span><h3>Wear protection</h3><p>Anti-wear additives form a protective layer on cams, gears and bearings when it matters most, during start-up.</p></div>
+  <div class="pillar reveal"><span class="n">ii.</span><h3>Heat resistance</h3><p>A stable viscosity holds its film strength in summer traffic, where air-cooled engines run hottest.</p></div>
+  <div class="pillar reveal"><span class="n">iii.</span><h3>Cleaner engine</h3><p>Detergents and dispersants keep soot and sludge suspended so it drains out at every change.</p></div>
+  <div class="pillar reveal"><span class="n">iv.</span><h3>Smooth clutch</h3><p>Friction-balanced for wet clutches, so gear changes stay crisp and the clutch doesn't slip.</p></div>
+</div>
+
+<section class="block" id="range"><div class="wrap">
+  <div class="shead">
+    <div><span class="eyebrow">The Range</span><h2>One engine.<br>The right oil.</h2></div>
+    <p>From the daily 70cc commute to high-revving 150cc machines, every MAX AVE blend is matched to a type of engine and the way it's ridden.</p>
+  </div>
+  <div class="range" id="rangeGrid"></div>
+</div></section>
+
+<section class="block finder" id="finder"><div class="wrap">
+  <div class="shead">
+    <div><span class="eyebrow">Oil Finder</span><h2>What do you ride?</h2></div>
+    <p>Choose your bike type and we'll recommend the right MAX AVE blend. If you're not sure, call us and we'll help.</p>
+  </div>
+  <div class="f-grid">
+    <div class="f-opts" id="fOpts"></div>
+    <div class="f-res" id="fRes"></div>
+  </div>
+</div></section>
+
+<section class="block" id="guide"><div class="wrap guide">
+  <div class="guide-img reveal"><img src="../assets/bottles/back-red.png" alt="Back label of a MAX AVE bottle"></div>
+  <div>
+    <span class="eyebrow">Read the label</span>
+    <h2 class="serif" style="font-size:clamp(40px,4.6vw,60px);line-height:1;margin:14px 0 30px">What the numbers mean</h2>
+    <dl class="dl">
+      <div><dt>20W</dt><dd>The <b>winter rating</b>. A lower number means the oil flows faster on a cold start, which is when most engine wear happens.</dd></div>
+      <div><dt>50</dt><dd>The <b>hot viscosity</b> at operating temperature. A higher number gives a thicker protective film in heat and under load.</dd></div>
+      <div><dt>4T</dt><dd>Made for <b>four-stroke engines</b>, where one oil lubricates the engine, gearbox and wet clutch.</dd></div>
+      <div><dt>API / JASO</dt><dd>Industry performance standards. <b>JASO MA/MA2</b> means the oil is safe for wet clutches. <b>JASO MB</b> is for scooters with an automatic (CVT) clutch.</dd></div>
+    </dl>
+  </div>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap">
+  <div class="shead">
+    <div><span class="eyebrow">Care guide</span><h2>A better oil change<br>in four steps.</h2></div>
+    <p>Most commuter bikes need fresh oil every 2,000–3,000 km. Check your owner's manual, and change it sooner if you ride in heavy dust or heat.</p>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><h4>Warm it up</h4><p>Run the engine for 2–3 minutes. Warm oil drains faster and carries more dirt out with it.</p></div>
+    <div class="step reveal"><h4>Drain completely</h4><p>Remove the drain bolt and let the old oil drip out fully. Clean the strainer if your bike has one.</p></div>
+    <div class="step reveal"><h4>Fill to the mark</h4><p>Refill with the quantity given in your manual (usually 0.7 L to 1 L) and check the level on the dipstick.</p></div>
+    <div class="step reveal"><h4>Note the reading</h4><p>Write down your odometer reading so you know when the next change is due.</p></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="l">
+    <span class="eyebrow">Sales &amp; Dealerships</span>
+    <h2>Stock MAX AVE<br>in your shop.</h2>
+    <p>We're growing our network of retailers, workshops and distributors across Pakistan. Talk to our sales team about trade pricing, bulk orders and point-of-sale support.</p>
+  </div>
+  <div class="r">
+    <div><span class="eyebrow">Call sales</span><a class="big" href="tel:+923041343605">+92 304 1343605</a></div>
+    <div><span class="eyebrow">WhatsApp</span><a class="big" href="https://wa.me/923041343605" target="_blank" rel="noopener">Message us →</a></div>
+    <div><span class="eyebrow">Hours</span><span style="display:block;margin-top:6px;color:var(--graphite)">Monday – Saturday, 9:00 am – 7:00 pm</span></div>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="shead"><div><span class="eyebrow">FAQ</span><h2>Good questions.</h2></div></div>
+  <div class="faq">
+    <details open><summary>How do I pay?</summary><p>You can pay the rider in cash on delivery, or pay instantly online from your JazzCash mobile account. Both options are available at checkout.</p></details>
+    <details><summary>How long does delivery take?</summary><p>Orders usually arrive in 2–4 working days in major cities, and a little longer in remote areas. We'll call to confirm your order before we dispatch it.</p></details>
+    <details><summary>Which oil is right for my bike?</summary><p>Use the Oil Finder above, or check the oil grade in your owner's manual. Most 70cc–125cc commuter bikes in Pakistan use 20W-50 4T oil.</p></details>
+    <details><summary>Can I use car oil in my motorcycle?</summary><p>No, this isn't recommended. Many car oils contain friction modifiers that can make a motorcycle's wet clutch slip. Always use a 4T motorcycle oil.</p></details>
+    <details><summary>Do you sell wholesale?</summary><p>Yes. Call or WhatsApp our sales team on +92 304 1343605 for trade pricing and dealership enquiries.</p></details>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="foot">
+    <div>
+      <a href="#" class="logo"><svg viewBox="0 0 40 40" aria-hidden="true" style="width:34px;height:34px"><circle cx="20" cy="20" r="18.5" fill="none" stroke="#a8843f" stroke-width="1.5"/><path d="M10 27 L16 13 L20 21 L24 13 L30 27" fill="none" stroke="#e0262f" stroke-width="3" stroke-linejoin="round"/></svg><span>MAX AVE<small>LUBRICANTS</small></span></a>
+      <p style="margin-top:18px;max-width:300px">Motorcycle engine oils for Pakistan's roads. Maximum Average.</p>
+    </div>
+    <div><h5>Shop</h5><ul><li><a href="#range">Motorcycle oils</a></li><li><a href="#range">Scooter oils</a></li><li><a href="#range">2-stroke</a></li></ul></div>
+    <div><h5>Help</h5><ul><li><a href="#finder">Oil finder</a></li><li><a href="#guide">Reading the label</a></li><li><a href="#">Delivery &amp; returns</a></li></ul></div>
+    <div><h5>Contact</h5><ul><li><a href="tel:+923041343605">+92 304 1343605</a></li><li><a href="https://wa.me/923041343605">WhatsApp</a></li><li>Mon–Sat, 9am–7pm</li></ul></div>
+  </div>
+  <div class="legal"><span>© 2026 MAX AVE Lubricants. All rights reserved.</span><span>Layout demo A · Editorial</span></div>
+</div></footer>
+
+<script src="shared/products.js"></script>
+<script src="shared/shop.js"></script>
+<script>
+const D = window.MAXAVE;
+// range grid
+document.getElementById("rangeGrid").innerHTML = D.products.map(p => `
+  <article class="card reveal" style="--sw:${p.swatch}">
+    <span class="tag">${p.tag}</span><span class="grade">${p.grade}</span>
+    <div class="card-img" data-quick="${p.id}"><img src="${D.img(p)}" alt="MAX AVE ${p.name}" loading="lazy"></div>
+    <div class="card-body">
+      <h3>${p.name}</h3>
+      <div class="meta">${p.base} · ${p.fits}</div>
+      <p>${p.short}</p>
+      <div class="card-foot">
+        <span class="price">${D.rs(p.sizes[0].price)} <small>/ ${p.sizes[0].label}</small></span>
+        <span class="acts"><button class="icon-btn" data-quick="${p.id}">Details</button><button class="icon-btn solid" data-add="${p.id}">Add</button></span>
+      </div>
+    </div>
+  </article>`).join("");
+
+// finder
+const bikes = [
+  ["classic", "Commuter 70cc – 125cc", "CD70, CG125, YBR and similar"],
+  ["plus", "Mid-size 125cc – 200cc", "Faster commuters and long-distance riders"],
+  ["scoot", "Automatic scooter", "CVT scooters"],
+  ["race", "Sport / 150cc+", "High-rev and performance riding"],
+  ["tour", "High-mileage bike", "Over 30,000 km on the clock"],
+  ["twot", "Two-stroke engine", "2T bikes, generators and equipment"]
+];
+const fOpts = document.getElementById("fOpts"), fRes = document.getElementById("fRes");
+fOpts.innerHTML = bikes.map(([id, t, s], i) => `<button class="f-opt ${i ? "" : "on"}" data-f="${id}"><span>${t}<small>${s}</small></span><span>→</span></button>`).join("");
+function showF(id) {
+  const p = D.find(id);
+  fRes.innerHTML = `<img src="${D.img(p)}" alt=""><div><span class="eyebrow" style="color:#a9a49b">We recommend</span><h3>${p.name}</h3><div class="g">SAE ${p.grade} · ${p.base}</div><p>${p.long}</p><p style="margin:0 0 4px">Change every <b style="color:#fff">${p.interval}</b></p><button class="btn" data-quick="${p.id}">View &amp; buy <span class="arrow"></span></button></div>`;
+}
+fOpts.addEventListener("click", e => { const b = e.target.closest(".f-opt"); if (!b) return; fOpts.querySelectorAll(".f-opt").forEach(x => x.classList.toggle("on", x === b)); showF(b.dataset.f); });
+showF("classic");
+
+// hero flip
+const hb = document.getElementById("heroBottle");
+document.querySelectorAll("[data-hs]").forEach(b => b.onclick = () => {
+  document.querySelectorAll("[data-hs]").forEach(x => x.classList.toggle("on", x === b));
+  hb.classList.add("swap");
+  setTimeout(() => { hb.src = `../assets/bottles/${b.dataset.hs}-red.png`; hb.classList.remove("swap"); }, 300);
+});
+
+// reveal
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
